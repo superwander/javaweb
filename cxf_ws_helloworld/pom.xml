@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.itcast.maven</groupId>
+  <artifactId>cxf_ws_helloworld</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>cxf_ws_helloworld</name>
+  <description>独立发布CXF服务java项目</description>
+  
+  <dependencies>
+  		<!-- 要进行jaxws 服务开发 -->
+  		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+		<!-- 内置jetty web服务器  -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http-jetty</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		
+		<!-- 日志实现 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+  </dependencies>
+</project>
